@@ -45,6 +45,12 @@ variable "tags" {
   default     = {}
 }
 
+variable "label_order" {
+  type        = list(string)
+  default     = []
+  description = "The naming order of the id output and Name tag"
+}
+
 variable "vpc_id" {
   type        = string
   description = "The VPC ID where resources are created"

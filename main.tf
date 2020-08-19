@@ -8,6 +8,7 @@ module "default_label" {
   stage       = var.stage
   environment = var.environment
   tags        = var.tags
+  label_order = var.label_order
 }
 
 module "task_label" {
